@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+    
+    background-image: url("spacesun.webp");
+    background-position:center;
+    background-size: cover;
+    background-repeat:repeat-x;
+}
+.block{
+    
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:space-evenly;
+    height:40vh;
+    margin-top:3rem;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    font-weight: 750;
+    font-size: 1.2rem;
+    height: 64px;
+    /* transition: scale(0); */
+    
+}
+.navblock{
+    width:20%;
+    display: flex;
+    justify-content: space-evenly;
+    height:100%;
+}
+
+form{
+    display: flex;
+    flex-basis: 0;
+    
+}
+.first{
+    margin-top:3rem;
+    text-align:center;
+    
+}
+.first h2{
+    color:rgba(255, 255, 255, 0.779);
+    text-transform:uppercase;
+    font-size:2rem;
+    line-height: 50px;
+    letter-spacing: 4.5px;
+    text-shadow:0.5px 0.5px 8px rgba(245, 245, 245, 0.897);
+    margin-top:0.1rem;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight:500;
+    height:100%;
+    display:flex;
+    align-items:center;
+}
+a:hover{
+    
+    border-bottom: solid 2px rgba(208, 203, 203, 0.683);
+}
+nav p{
+    margin-left: 5%;
+    
+}
+.first p{
+    text-align:center;
+    font-size:1.1rem;
+    letter-spacing: 5px;
+    font-weight:750;
+    margin-top:1rem;
+    color:rgba(181, 181, 181, 0.767);
+}
+
+
+
+.img{
+    height: 200px;
+    width: 350px;
+    border-radius:5px;
+    margin-bottom: 10px;
+}
+.imgblock{
+    height: 300px;
+    width: 350px;
+    object-fit: cover;
+}
+#date{
+    height:2.5rem;
+    width:20vw;
+    min-width: 200px;
+    outline:none;
+    border: none;
+    font-size:1rem;
+    letter-spacing: 0.2;
+    color:rgba(61, 60, 60, 0.71);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.689);
+    box-shadow: 4px 4px 4px maroon,-4px -4px 4px rgb(63, 0, 0);
+}
+::placeholder{
+    color:rgba(219, 223, 227, 0.852);
+}
+#submit{
+    height:2.5rem;
+    width:4.5rem;
+    outline:none;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.703);
+    box-shadow: 4px 4px 4px maroon,0px -1px 2px rgb(63, 0, 0);
+}
+#submit:hover{
+    background-color: rgba(211, 210, 210, 0.836);
+    
+}
+::-webkit-calendar-picker-indicator{
+    background-color: #9b9b9bb0;
+    padding: 5px;
+    font-size:1.1rem;
+    margin-right:10px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px whitesmoke;
+}
+::-webkit-calendar-picker-indicator:hover{
+    background-color: #b2b1b1d7;
+    
+}
