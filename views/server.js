@@ -5,7 +5,6 @@ import 'dotenv/config';
 const app=express();
 const port=3000;
 const apikey=process.env.API_KEY;
-// console.log(apikey)
 app.use(express.static("public"))
 app.get("/",(req,res)=>{
     res.render("index.ejs",{
