@@ -5,10 +5,10 @@ import 'dotenv/config';
 const app=express();
 const port=3000;
 const apikey=process.env.API_KEY;
-app.use(express.static("public"))
+app.use(express.static("./views/public"))
 app.get("/",(req,res)=>{
     res.render("index.ejs",{
-        url:"./public/images.png"
+        url:"./views/public/images.png"
     })
 })
 app.use(bodyParser.urlencoded({extended:true}))
