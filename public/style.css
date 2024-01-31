@@ -86,13 +86,34 @@ nav p{
 .img{
     height: 200px;
     width: 350px;
+    z-index: -1;
     border-radius:5px;
     margin-bottom: 10px;
+    cursor:pointer;
+    box-shadow: 2px 2px 2px rgba(99, 3, 3, 0.906) , -1px -1px 1px rgba(193, 13, 13, 0.646);
 }
 .imgblock{
-    height: 300px;
+    height: 200px;
     width: 350px;
     object-fit: cover;
+    position: relative;
+    margin:0 auto;
+}
+.imgblock .content{
+    position: absolute; /* Position the background text */
+  height:60%;
+  visibility: hidden;
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  text-align: center;
+  font-weight: 900;
+  width: 100%; /* Full width */
+  
+}
+.imgblock:hover .content{
+    visibility:visible;
 }
 #date{
     height:2.5rem;

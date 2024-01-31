@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>spacefinder</title>
-    <link rel="stylesheet" href="../style.css" >
+    <link rel="stylesheet" href="./public/style.css">
+
+    
 </head>
 <body>
     <nav>
@@ -13,18 +15,22 @@
     </nav>
     <div class="first">
         <p>With everday update</p>
-    <h2> Explore a unique and <br>beautiful universe</h2>
+        <h2> Explore a unique and <br>beautiful universe</h2>
     </div>
     <div class="block">
         <div class="imgblock">
-        <img src=<%= url %> class="img">
+        <img src="./public/images.png" class="img">
+        <div class="content">
+        <p id="imgp">lkfnlkdflndlnf dskjfnkjsd</p>
         </div>
+    </div>
         <div>
-        <form action="/apod" method="post" >
+        <form method="post" onsubmit="event.preventDefault()" >
             <input type="date" name="date" id="date"  pattern="\d{4}-\d{2}-\d{2}">
-            <input type="submit" value="send" id="submit" >
+            <input type="submit" id="submit" name="submit" >
         </form>
         </div>
     </div>
+    <script charset="UTF-8" src="server.js"></script>
     </body>
 </html>
