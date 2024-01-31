@@ -8,7 +8,7 @@ const apikey=process.env.API_KEY;
 app.use(express.static("public"))
 app.get("/",(req,res)=>{
     res.render("index.ejs",{
-        url:"images.png"
+        url:"./public/images.png"
     })
 })
 app.use(bodyParser.urlencoded({extended:true}))
